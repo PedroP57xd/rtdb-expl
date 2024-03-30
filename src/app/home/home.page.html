@@ -1,20 +1,80 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Casa
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="house">
+    <div class="roof">
+      <div class="rotop"></div>
+      <div class="role"></div>
+      <div class="rori"></div>
+    </div>
+    <div class="cont">
+      <div class="w w1" [ngClass]="{'light-on': bano, 'light-off': !bano}" id="bano"></div>
+      <div class="w w2" [ngClass]="{'light-on': cocina, 'light-off': !cocina}" id="cocina"></div>
+      <div class="w w3" [ngClass]="{'light-on': cuarto, 'light-off': !cuarto}" id="cuarto"></div>
+      <div class="w w4" [ngClass]="{'light-on': cuarto2, 'light-off': !cuarto2}" id="cuarto2"></div>
+      <div class="w w5" [ngClass]="{'light-on': cuarto3, 'light-off': !cuarto3}" id="cuarto3"></div>
+      <div class="w w6" [ngClass]="{'light-on': cuarto4, 'light-off': !cuarto4}" id="cuarto4"></div>
+      <div class="w w7" [ngClass]="{'light-on': cuarto5, 'light-off': !cuarto5}" id="cuarto5"></div>
+      <div class="w w8" [ngClass]="{'light-on': oficina, 'light-off': !oficina}" id="oficna"></div>
+      <div class="w w9" [ngClass]="{'light-on': patio, 'light-off': !patio}" id="patio"></div>
+      <div class="w w10" [ngClass]="{'light-on': sala, 'light-off': !sala}" id="sala"></div>
+      <div class="door">
+        <div class="doha"></div>
+      </div>
+    </div>
+  </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="butb">
+    <div class="butcont">
+      <div class="butsle">
+        <ion-button shape="round" [color]="bano ? 'warning' : 'primary'" (click)="toggleLight('bano', bano)" class="botp">
+          {{ bano ? 'bano On' : 'bano Off' }}
+        </ion-button>
+
+        <ion-button shape="round" [color]="cocina ? 'warning' : 'primary'" (click)="toggleLight('cocina', cocina)" class="botp">
+          {{ cocina ? 'cocina On' : 'cocina Off' }}
+        </ion-button>
+
+        <ion-button shape="round" [color]="cuarto ? 'warning' : 'primary'" (click)="toggleLight('cuarto', cuarto)" class="botp">
+          {{ cuarto ? 'cuarto  On' : 'cuarto  Off' }}
+        </ion-button>
+      </div>
+      <div class="buttons-right">
+        <ion-button shape="round" [color]="cuarto2 ? 'warning' : 'primary'" (click)="toggleLight('cuarto2', cuarto2)" class="botp">
+          {{ cuarto2 ? 'cuarto 2 On' : 'cuarto 2 Off' }}
+        </ion-button>
+
+        <ion-button shape="round" [color]="cuarto3 ? 'warning' : 'primary'" (click)="toggleLight('cuarto3', cuarto3)" class="botp">
+          {{ cuarto3 ? 'cuarto 3 On' : 'cuarto 3 Off' }}
+        </ion-button>
+      <div class="buttons-right">
+        <ion-button shape="round" [color]="cuarto4 ? 'warning' : 'primary'" (click)="toggleLight('cuarto4', cuarto4)" class="botp">
+          {{ cuarto4 ? 'cuarto 4 On' : 'cuarto 4 Off' }}
+        </ion-button>
+
+        <ion-button shape="round" [color]="cuarto5 ? 'warning' : 'primary'" (click)="toggleLight('cuarto5', cuarto5)" class="botp">
+          {{ cuarto5 ? 'cuarto 5 On' : 'cuarto 5 Off' }}
+        </ion-button>
+      <div class="buttons-right">
+        <ion-button shape="round" [color]="oficina ? 'warning' : 'primary'" (click)="toggleLight('oficina', oficina)" class="botp">
+          {{ oficina ? 'oficina On' : 'oficina Off' }}
+        </ion-button>
+
+        <ion-button shape="round" [color]="patio ? 'warning' : 'primary'" (click)="toggleLight('patio', patio)" class="botp">
+          {{ patio ? 'patio On' : 'patio Off' }}
+        </ion-button>
+
+        <ion-button shape="round" [color]="sala ? 'warning' : 'primary'" (click)="toggleLight('sala', sala)" class="botp">
+          {{ sala ? 'sala On' : 'sala Off' }}
+        </ion-button>
+      </div>
+    </div>
   </div>
 </ion-content>
+    

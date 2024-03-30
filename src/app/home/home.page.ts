@@ -21,8 +21,8 @@ export class HomePage {
   patio: boolean = false;
   sala: boolean = false;
 
-  constructor(private database:Database) {
-
+  constructor(public database:Database) {
+    this.ngOnInit();
   }
   ngOnInit() {
     const routebano: DatabaseReference = ref(this.database, "/casa/bano");

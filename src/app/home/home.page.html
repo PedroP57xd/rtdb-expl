@@ -29,40 +29,45 @@
       </div>
     </div>
   </div>
+  <div class="content">
+    <div class="cont">
 
-        <ion-button shape="round" [color]="bano ? 'warning' : 'primary'" (click)="toggleLight('bano', bano)" class="botp">
-          {{ bano ? 'bano On' : 'bano Off' }}
-        </ion-button>
+      <ion-button shape="round" [color]="bano ? 'warning' : 'primary'" (click)="toggleLight('bano', bano)" class="botp">
+        {{ bano ? 'bano On' : 'bano Off' }}
+      </ion-button>
+      
+      <ion-button shape="round" [color]="cocina ? 'warning' : 'primary'" (click)="toggleLight('cocina', cocina)" class="botp">
+        {{ cocina ? 'cocina On' : 'cocina Off' }}
+      </ion-button>
 
-        <ion-button shape="round" [color]="cocina ? 'warning' : 'primary'" (click)="toggleLight('cocina', cocina)" class="botp">
-          {{ cocina ? 'cocina On' : 'cocina Off' }}
-        </ion-button>
+      <ion-button shape="round" [color]="cuarto ? 'warning' : 'primary'" (click)="toggleLight('cuarto', cuarto)" class="botp">
+      {{ cuarto ? 'cuarto  On' : 'cuarto  Off' }}
+    </ion-button>
+      <ion-button shape="round" [color]="cuarto2 ? 'warning' : 'primary'" (click)="toggleLight('cuarto2', cuarto2)" class="botp">
+      {{ cuarto2 ? 'cuarto 2 On' : 'cuarto 2 Off' }}
+    </ion-button>
+    
+    <ion-button shape="round" [color]="cuarto3 ? 'warning' : 'primary'" (click)="toggleLight('cuarto3', cuarto3)" class="botp">
+      {{ cuarto3 ? 'cuarto 3 On' : 'cuarto 3 Off' }}
+    </ion-button>
+      <ion-button shape="round" [color]="cuarto4 ? 'warning' : 'primary'" (click)="toggleLight('cuarto4', cuarto4)" class="botp">
+      {{ cuarto4 ? 'cuarto 4 On' : 'cuarto 4 Off' }}
+      </ion-button>
+      
+      <ion-button shape="round" [color]="cuarto5 ? 'warning' : 'primary'" (click)="toggleLight('cuarto5', cuarto5)" class="botp">
+      {{ cuarto5 ? 'cuarto 5 On' : 'cuarto 5 Off' }}
+      </ion-button>
+      <ion-button shape="round" [color]="oficina ? 'warning' : 'primary'" (click)="toggleLight('oficina', oficina)" class="botp">
+      {{ oficina ? 'oficina On' : 'oficina Off' }}
+      </ion-button>
 
-        <ion-button shape="round" [color]="cuarto ? 'warning' : 'primary'" (click)="toggleLight('cuarto', cuarto)" class="botp">
-          {{ cuarto ? 'cuarto  On' : 'cuarto  Off' }}
-        </ion-button>
-        <ion-button shape="round" [color]="cuarto2 ? 'warning' : 'primary'" (click)="toggleLight('cuarto2', cuarto2)" class="botp">
-          {{ cuarto2 ? 'cuarto 2 On' : 'cuarto 2 Off' }}
-        </ion-button>
+      <ion-button shape="round" [color]="patio ? 'warning' : 'primary'" (click)="toggleLight('patio', patio)" class="botp">
+      {{ patio ? 'patio On' : 'patio Off' }}
+      </ion-button>
 
-        <ion-button shape="round" [color]="cuarto3 ? 'warning' : 'primary'" (click)="toggleLight('cuarto3', cuarto3)" class="botp">
-          {{ cuarto3 ? 'cuarto 3 On' : 'cuarto 3 Off' }}
-        </ion-button>
-        <ion-button shape="round" [color]="cuarto4 ? 'warning' : 'primary'" (click)="toggleLight('cuarto4', cuarto4)" class="botp">
-          {{ cuarto4 ? 'cuarto 4 On' : 'cuarto 4 Off' }}
-        </ion-button>
-
-        <ion-button shape="round" [color]="cuarto5 ? 'warning' : 'primary'" (click)="toggleLight('cuarto5', cuarto5)" class="botp">
-          {{ cuarto5 ? 'cuarto 5 On' : 'cuarto 5 Off' }}
-        </ion-button>
-        <ion-button shape="round" [color]="oficina ? 'warning' : 'primary'" (click)="toggleLight('oficina', oficina)" class="botp">
-          {{ oficina ? 'oficina On' : 'oficina Off' }}
-        </ion-button>
-
-        <ion-button shape="round" [color]="patio ? 'warning' : 'primary'" (click)="toggleLight('patio', patio)" class="botp">
-          {{ patio ? 'patio On' : 'patio Off' }}
-        </ion-button>
-
-        <ion-button shape="round" [color]="sala ? 'warning' : 'primary'" (click)="toggleLight('sala', sala)" class="botp">
-          {{ sala ? 'sala On' : 'sala Off' }}
-        </ion-button>
+      <ion-button shape="round" [color]="sala ? 'warning' : 'primary'" (click)="toggleLight('sala', sala)" class="botp">
+        {{ sala ? 'sala On' : 'sala Off' }}
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
